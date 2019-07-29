@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-import Main from '../components/Main';
-
 // Interface for the Counter component state
 interface CounterState {
   currentCount: number;
@@ -20,7 +18,7 @@ export default class CounterPage extends React.Component<{}, CounterState> {
 
   public render(): JSX.Element {
     return (
-      <Main>
+      <div className='container'>
         <h1>Counter</h1>
         <p>
           The Counter is the simplest example of what you can do with a React
@@ -44,10 +42,7 @@ export default class CounterPage extends React.Component<{}, CounterState> {
         </button>
         <br />
         <br />
-        <p>
-          <Link to='/'>Back to home</Link>
-        </p>
-      </Main>
+      </div>
     );
   }
 

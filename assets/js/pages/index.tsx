@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
-import Main from '../components/Main';
 
-const HomePage: React.FC<RouteComponentProps> = () => <Main>HomePage</Main>;
+const HomePage: React.FC = () => <div />;
 
 export default HomePage;
