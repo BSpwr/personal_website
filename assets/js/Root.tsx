@@ -1,20 +1,20 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Header from './components/Navbar';
-import HomePage from './pages';
-import Counter from './components/Counter';
+import Homepage from './pages/home_page';
+import Counter from './components/counter';
+import Resume from './components/resume';
 
 export default class Root extends React.Component {
   public render(): JSX.Element {
     return (
       <>
-        <div className='container'>
-          <Header />
+        <div>
           <BrowserRouter>
             <Switch>
-              <Route exact path='/' component={HomePage} />
+              <Route exact path='/' component={Homepage} />
               <Route path='/counter' component={Counter} />
+              <Route path='/resume' component={Resume} />
             </Switch>
           </BrowserRouter>
         </div>
