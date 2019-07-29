@@ -12,7 +12,7 @@ export default class Navbar extends React.Component {
     return (
       <header>
         <div>
-          <nav className='navbar navbar-expand-lg navbar-dark bg-primary'>
+          <nav className='navbar navbar-fixed navbar-expand-lg navbar-dark bg-primary'>
             <i className='fas fa-light fa-microchip fa-2x navbar-logo' />
             <a className='navbar-brand' href='resume'>
               Boris Spektor

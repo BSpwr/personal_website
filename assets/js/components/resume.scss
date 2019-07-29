@@ -1,0 +1,17 @@
+.grey_bg {
+  background-color: #333333;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.doc_layout {
+  display: auto;
+  margin: auto auto;
+  border-color: black;
+  border-right: 40rem;
+  border-bottom: 40rem;
+  overflow-y: scroll;
+}
