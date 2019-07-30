@@ -15,6 +15,8 @@ config :personal_website, PersonalWebsiteWeb.Endpoint,
     {"node",
      [
        "node_modules/webpack/bin/webpack.js",
+       "--mode",
+       "development",
        "--watch-stdin",
        "--colors"
      ]}

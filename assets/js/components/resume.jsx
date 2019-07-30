@@ -10,7 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 import Navbar from '../components/navbar';
 
-import styles from './resume.scss';
+import './resume.scss';
 
 export default class Resume extends Component {
   state = {
@@ -29,10 +29,10 @@ export default class Resume extends Component {
     return (
       <div>
         <Navbar path={this.props.location.pathname} />
-        <div className={`container ${styles.grey_bg}`}>
-          <div className="row">
-            <div className={`col-lg-1 ${styles.centered}`}>
-              <div className={`document ${styles.doc_layout}`}>
+        <div className="container">
+          <div className="centered">
+            <div className="">
+              <div className="doc_layout">
                 <Document
                   file="/images/resume.pdf"
                   onLoadSuccess={this.onDocumentLoadSuccess}
